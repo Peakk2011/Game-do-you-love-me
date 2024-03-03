@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Do you love me Noohdee</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <h1 class="header_text">Do you love me noohdee.</h1>
+            <h2 class="header_text">Let me know, ya.</h2>
+        </div>
+        <div class="gif_container">
+            <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmZhbmxrb3Q5ZjV3YmJ2eHl6OTZodDl2ZWh4aXcwcDZtZmo5aGxjMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Zsormm4i0J1sy7PJs6/giphy.gif"
+                alt="" </div>
+            <div class="buttons">
+                <button class="btn" id="yesButton" onclick="nextPage()">Yes</buttton>
+                    <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+                    <script>
+                        function nextPage() {
+                            var jpg = 'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMncyODRwbHVhNjlmcGhzbHFlYzYwZmxpbTJ5bTF3bGIyb3E4d3FhaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/IIRGvLtNTVF6KqzEew/giphy.gif';
+                            alert("That is correct thank you my daring");
+                            document.write ('Thank you kub Noohdee')
+                            var newWindow = window.open('', '_blank');
+                            newWindow.document.write("<img src='" + jpg + "' alt=''>");
+                        }
+
+                        function moveButton() {
+                            var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 105;
+                            var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                            document.getElementById('noButton').style.left = `${x}px`;
+                            document.getElementById('noButton').style.top = `${y}px`;
+                        }
+                    </script>
+            </div>
+        </div>
+
+        <style>
+            body {
+                background: #d78191;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            div {
+                display: block;
+            }
+
+            .gif_container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .header_text {
+                font-size: 25px;
+                font-weight: normal;
+                color: #ffffff;
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 0px;
+            }
+
+            .buttons {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+
+            #yesButton {
+                position: absolute;
+                margin-right: 350px;
+                margin-bottom: -350px;
+            }
+
+            #noButton {
+                position: absolute;
+                margin-left: 0px;
+                margin-bottom: 0px;
+                transition: 0.5s;
+            }
+
+            .btn {
+                background-color: #d78191;
+                color: #53350d;
+                padding: 0.5rem 1rem;
+                text-align: center;
+                display: inline-block;
+                font-size: 16px;
+                font-weight: bold;
+                margin: 4px 2px;
+                cursor: pointer;
+                border: bold;
+                border-color: white;
+                border-radius: 6px;
+                transition: background-color 0.3s ease;
+                border: none;
+                outline: solid 2px #000;
+            }
+        </style>
+
+</body>
+
+</html>
